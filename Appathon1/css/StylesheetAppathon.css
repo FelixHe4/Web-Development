@@ -1,0 +1,66 @@
+﻿body {
+    background-color: #d9dce0;
+}
+.title {
+    font-size: 4em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #5b9aff;
+    text-align: center;
+}
+h1 {
+    font-size: 2em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #5b9aff;
+    text-decoration: underline;
+
+}
+p{
+    font-family: 'Times New Roman';
+}
+li{
+    font-family: 'Times New Roman';
+}
+.button {
+    background-image: url("https://i.imgur.com/Q8sdVcw.png");
+    width: 350px;
+    height: 150px;
+    background-color: inherit;
+    border: none;
+}
+.stats ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+}
+
+li {
+    float: left;
+    align-items: center;
+}
+
+li a {
+    display: block;
+    text-align: center;
+    padding: 14px;
+    width: 120px;
+    text-decoration: none;
+    color: white;
+}
+
+li a:hover {
+    background-color: #111;
+}
+.active{
+    background-color: #4CAF50;
+}
+.ul1 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #333;
+}

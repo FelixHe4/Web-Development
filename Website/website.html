@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html class='w-100 h-100'>
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="website.js"></script>
+	<title>Sample Website Name</title>
+
+  <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/5.11.1/firebase-app.js"></script>
+
+  <!-- Add Firebase products that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/5.11.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.11.1/firebase-database.js"></script>
+</head>
+<body class="w-100 h-100">
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navigation Bar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Passwords</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About Us</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<main class='container-fluid h-50'>
+	<div class="row h-100">
+ <div class="form-group p-4 w-50 h-75" >
+    <label for="exampleFormControlTextarea1">Enter Information: </label>
+    <textarea class="form-control h-100" id="exampleFormControlTextarea1" rows="3" placeholder="e.g (John, Smith, Pizza, 18, Fish Sticks, Dog, MacBook Pro 2018)"></textarea>
+      <button type="buttongreen" class="btn btn-success mt-2" onclick='generate();'>Generate</button>
+      <button type="buttongreen" class="btn btn-success mt-2" onclick='retrieve();'>Retrieve</button>
+      <input type='text'class='form-group' id="key"/>
+  </div>
+   <div class="form-group p-4 w-50 h-75" >
+    <label for="exampleFormControlTextarea1">Generated Passwords: </label>
+    <textarea class="form-control h-100" id="exampleFormControlTextarea2" rows="3"></textarea>
+      <button type="buttongreen" class="btn btn-primary mt-2" onclick='save();'>Save</button>
+  </div>
+</div>
+<ul class="list-group w-50">
+  <li class="list-group-item">Enter some keywords into the textbox above.</li>
+  <li class="list-group-item">More words will allow us to generate a more complex password.</li>
+  <li class="list-group-item">Click submit when you are finished.</li>
+  <li class="list-group-item">Choose a password from the password field.</li>
+  <li class="list-group-item">Click save to save your password to our secure database.</li>
+</ul>
+</main>
+</html>
